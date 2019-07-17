@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 Demo Login
+  form(method='POST')
+    .form-group
+      label Email
+      input.form-control(name='email' required value='test@example.com')
+
+    .form-group
+      label Password
+      input.form-control(name='password' type='password' required value='123456')
+
+    button.btn.btn-primary(type='submit') Login
