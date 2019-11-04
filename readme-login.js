@@ -19,9 +19,10 @@ module.exports = (req, res) => {
     // User's API Key
     apiKey: 'test_123sldoih',
     
-    isAdmin: true, // Optional: This being true will bypass the docs access control
+    version: 1, // Required, if omited things can break unexpectedly
 
     // You can pass in any information here and use it in your documentation!
+    // Full list of data that has special meaning in our API Explorer: https://docs.readme.com/docs/passing-data-to-jwt
   };
 
   var jwt = sign(user, process.env.JWT_SECRET);
