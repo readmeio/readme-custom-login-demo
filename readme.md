@@ -1,6 +1,7 @@
 # ReadMe Custom Login Demo
 
-Custom login lets you create interactive API docs (an "API Explorer"). Your users log into the docs, and then they see working code examples that contain their personal API key that they can try out from within the docs. The custom login flow automatically provisions their API key.  
+Custom login lets you create interactive API docs (an "API Explorer") so your users can log into the docs.
+ can also configure it so they see working code examples that contain their personal API key that they can try out from within the docs.   
 
 ## Setup
 To setup:
