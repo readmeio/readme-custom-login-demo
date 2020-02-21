@@ -41,4 +41,4 @@ You can generate example API docs (an "API Explorer") from the example in this r
 ```
 npx rdme swagger openapi.json --key="<your api key>"
 ```
-- Follow the command-line prompts to select a version for your API reference and update or create a new reference.
+- Follow the command-line prompts to select a version for your API reference and update or create new API docs.
