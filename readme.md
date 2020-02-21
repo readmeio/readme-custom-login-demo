@@ -8,7 +8,7 @@ npm install
 
 ## Running
 
-Grab JWT secret from "User Connect" => "Magic Login Link" in the ReadMe Dash.
+Grab JWT secret from "Configuration" => "Custom Login" in the ReadMe Dash. (dash.readme.io/project/`yourProject`/custom-login)
 
 ```
 JWT_SECRET=<your jwt secret> HUB_URL=<your hub url> npm start
