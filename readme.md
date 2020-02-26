@@ -51,7 +51,7 @@ npx rdme swagger openapi.json --key="<your api key>"
 ```
 - Follow the command-line prompts to select a version for your API reference and update or create new API docs.
 
-## See the logged-in users's API key in the docs 
+## Login to the docs 
 
 In your ReadMe docs project that you want to test this demo with, set the custom login page to this demo's page:
 
