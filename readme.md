@@ -41,7 +41,7 @@ Listening on http://localhost:3000
 - Leave this terminal window open and open a new terminal window for the following steps
 
 ## Sync example API docs to your project
-You can generate example API docs (an "API Explorer") from the example in this repo, then you can test out the login flow from within those docs:  
+You can generate example API docs (an "API Explorer") from the example API spec in this repo (openapi.json). Then you can test out the login flow from within those API docs. Note that the example API spec is just for your convenience; you could also upload an API spec via other methods to your docs project. If you do, just make sure that the API uses the same `securitySchema` as the example in this repo.  
 
 - Grab your api key from the docs project where you want to test custom login. "Configuration" => "API Key" (dash.readme.io/project/`yourProject`/api-key)
 - To sync the example API spec in this repo (`openapi.json`),  run in the command line at the cloned repo directory:
@@ -57,7 +57,9 @@ In your ReadMe docs project that you want to test this demo with, set the custom
 
 http://localhost:3000/ 
 
-Then log out of ReadMe (if you're logged in), click login, and you should be redirected to the **Demo Login** page being run on your localhost by this demo server. Leave the example credentials, click **Login**, and you'll see you're logged in as test@example.com in your ReadMe docs project.
+Then log out of ReadMe (if you're logged in), click login, and you should be redirected to the **Demo Login** page being run on your localhost by this demo server. Leave the example credentials, click **Login**, and you'll see you're logged in as test@example.com in your ReadMe docs project. Now you'll see the API explorer prepopulates each code example with an authentication header. (don't expect the API Explorer **Try it out** button to actually work, though, that would require a working API behind the docs, which is outside the scope of this demo). 
+
+
 
 
 
