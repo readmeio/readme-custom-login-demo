@@ -11,13 +11,14 @@ module.exports = (req, res) => {
   // Validate email and password is a correct user, and get the user information
 
   // User being logged into ReadMe
-  // At this point we have a valid user, so we are sending them to readme
+  // FE at this point we're hardcoding in a user's name to mock sending a valid 
+  //At this point we have a valid user, so we are sending them to readme
   var user = {
     name: email,
     email: email,
     
     // User's API Key
-    apiKey: 'test_123sldoih',
+    apiKey: { user: 'testUser', pass: '123pass' },
     
     version: 1, // Required, if omited things can break unexpectedly
 
@@ -28,7 +29,6 @@ module.exports = (req, res) => {
   var jwt = sign(user, process.env.JWT_SECRET);
   var url = new URL(process.env.HUB_URL);
   url.searchParams.set('auth_token', jwt);
-
   console.log('Redirecting to: ', url.toString());
   return res.redirect(url);
 }
