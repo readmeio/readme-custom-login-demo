@@ -20,7 +20,11 @@
         "summary": "Should fetch variables from defaults and user values",
         "description": "",
         "parameters": [],
-        "responses": {},
+        "responses": {
+          "200": {
+            "description": "show defaults"
+          }
+        },
         "security": [
           {
             "apiKey": []
@@ -32,7 +36,8 @@
   "components": {
     "securitySchemes": {
       "apiKey": {
-        "type": "oauth2"
+        "type": "http",
+        "scheme": "basic"
       }
     }
   },
@@ -40,3 +45,8 @@
   "x-samples-enabled": true,
   "x-samples-languages": ["curl", "node", "ruby", "javascript", "python"]
 }
+
+
+
+
+
