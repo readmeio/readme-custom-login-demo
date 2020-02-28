@@ -11,13 +11,12 @@ module.exports = (req, res) => {
   // Validate email and password is a correct user, and get the user information
 
   // User being logged into ReadMe
-  // FE at this point we're hardcoding in a user's name to mock sending a valid 
-  //At this point we have a valid user, so we are sending them to readme
+  // At this point we're hardcoding in a user's name to mock sending in a valid user
   var user = {
     name: email,
     email: email,
     
-    // User's API Key
+    // User's API Key (OR) { user, pass }
     apiKey: { user: 'testUser', pass: '123pass' },
     
     version: 1, // Required, if omited things can break unexpectedly
