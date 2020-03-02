@@ -1,8 +1,9 @@
 # ReadMe Custom Login Demo
-
-This repo demos ReadMe's [Custom Login Feature](https://docs.readme.com/guides/docs/custom-login-with-readme). 
+ 
 Custom login lets you create interactive API docs (an "API Explorer") so your users can log into the docs.
  You can also configure it so they see working code examples that contain their personal API key that they can try out from within the API  Explorer and other docs.   
+ 
+For more info, see docs on ReadMe's [Custom Login Feature](https://docs.readme.com/guides/docs/custom-login-with-readme).
  
  
 ## Prerequisites
