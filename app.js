@@ -26,7 +26,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-  return res.render('index')
+  return res.render('index', { redirect: req.query.redirect || '' });
 });
 
 app.post('/', readmeLogin);

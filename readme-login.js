@@ -5,6 +5,7 @@ var { URL } = require('url');
 // This should do all of the work to login and verify the user is valid
 module.exports = (req, res) => {
   var { email, password } = req.body;
+  var redirect = req.body.redirect || req.query.redirect;
 
   console.log('Use these credentials to log the user in somewhere:', { email, password });
 
@@ -28,6 +29,7 @@ module.exports = (req, res) => {
   var jwt = sign(user, process.env.JWT_SECRET);
   var url = new URL(process.env.HUB_URL);
   url.searchParams.set('auth_token', jwt);
+  if (redirect) url.searchParams.set('redirect', redirect);
   console.log('Redirecting to: ', url.toString());
   return res.redirect(url);
 }

@@ -3,6 +3,7 @@ extends layout
 block content
   h1 Demo Login
   form(method='POST')
+    input(type='hidden', name='redirect', value=redirect)
     .form-group
       label Email
       input.form-control(name='email' required value='test@example.com')
